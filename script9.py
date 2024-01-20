@@ -9,6 +9,15 @@ while 1 == 1:
     subprocess.Popen('support_4_script.py', shell=True)
     key_up = False
     """считыавем букву с картинки"""
+    """Если нужно быстрее но хуже раскоментируй всё для тесеракта"""
+    """считыавем букву с картинки"""
+    #path_to_tesseract = r"D:\programirov\tesseract\tesseract.exe"
+    #pytesseract.tesseract_cmd = path_to_tesseract
+    #text += pytesseract.image_to_string(cropped, lang='rus') + '\n'
+    #result = []
+    #result.append(text)
+    """а это закоментируй"""
+    
     reader = easyocr.Reader(["ru"])
     result = reader.readtext("screen.jpg", detail=0)
     try:
